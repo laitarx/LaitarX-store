@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إتمام الطلب</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="checkout-container">
+    <h2>إتمام الطلب</h2>
+    <form id="checkoutForm">
+      <label for="address">العنوان:</label>
+      <input type="text" id="address" required>
+      
+      <label for="payment">طريقة الدفع:</label>
+      <select id="payment" required>
+        <option value="mada">Mada</option>
+        <option value="paypal">PayPal</option>
+      </select>
+
+      <button type="submit">إتمام الشراء</button>
+    </form>
+  </div>
+
+  <script src="js/checkout.js"></script>
+</body>
+</html>

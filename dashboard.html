@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة تحكم التاجر</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="dashboard">
+    <h1>لوحة تحكم التاجر</h1>
+
+    <section class="product-management">
+      <h2>إدارة المنتجات</h2>
+      <button onclick="showAddProductForm()">إضافة منتج جديد</button>
+      <div id="addProductForm" style="display: none;">
+        <h3>إضافة منتج</h3>
+        <input type="text" id="productName" placeholder="اسم المنتج">
+        <input type="number" id="productPrice" placeholder="السعر">
+        <button onclick="addProduct()">إضافة المنتج</button>
+      </div>
+      <div id="productList">
+        <!-- ستظهر قائمة المنتجات هنا -->
+      </div>
+    </section>
+
+    <section class="order-management">
+      <h2>إدارة الطلبات</h2>
+      <div id="orderList">
+        <!-- ستظهر قائمة الطلبات هنا -->
+      </div>
+    </section>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
